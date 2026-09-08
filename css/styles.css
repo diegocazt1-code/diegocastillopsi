@@ -790,6 +790,255 @@ p { color: var(--muted); }
 }
 
 
+
+/* FORMACIÓN Y ASESORÍA — composición de recorrido */
+
+.learning-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, #F8F6FA 0%, #F5F1F8 100%);
+}
+
+.learning-section::after {
+  content: "DC";
+  position: absolute;
+  right: -28px;
+  bottom: -110px;
+  color: rgba(46, 36, 90, 0.035);
+  font-size: 300px;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.learning-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.learning-header {
+  display: grid;
+  grid-template-columns: 1fr 0.78fr;
+  gap: 76px;
+  align-items: end;
+  margin-bottom: 54px;
+}
+
+.learning-header h2 {
+  max-width: 700px;
+  margin-bottom: 0;
+}
+
+.learning-lead {
+  max-width: 500px;
+  margin: 0 0 8px auto;
+  padding-left: 24px;
+  border-left: 2px solid var(--purple);
+  font-size: 15px;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+  gap: 42px;
+  align-items: stretch;
+}
+
+.learning-rail {
+  padding: 30px 30px 26px;
+  border: 1px solid rgba(182, 167, 209, 0.6);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.learning-rail-label {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.learning-rail-label span {
+  display: block;
+  color: var(--purple-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.learning-rail-label small {
+  color: var(--muted);
+}
+
+.learning-rail-step {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.learning-rail-step:last-child {
+  border-bottom: 0;
+}
+
+.learning-rail-index {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--purple-soft);
+  color: var(--purple);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.learning-rail-step strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--purple-dark);
+  font-size: 15px;
+}
+
+.learning-rail-step p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.learning-offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.learning-offer {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 30px;
+  border-top: 4px solid var(--purple-mid);
+  border-radius: 0 0 24px 24px;
+  background: #FFFFFF;
+  box-shadow: 0 18px 40px rgba(46, 36, 90, 0.06);
+}
+
+.learning-offer-primary {
+  border-top-color: var(--purple);
+}
+
+.learning-offer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.learning-offer-type {
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.learning-offer-status {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--purple-soft);
+  color: var(--purple-dark);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.learning-offer-status.muted {
+  background: #F1EEF4;
+  color: #81788B;
+}
+
+.learning-offer h3 {
+  max-width: 360px;
+  margin-bottom: 14px;
+  color: var(--purple-dark);
+  font-size: 29px;
+}
+
+.learning-offer > p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.learning-offer-points {
+  display: grid;
+  gap: 9px;
+  margin: 22px 0 30px;
+}
+
+.learning-offer-points span {
+  position: relative;
+  padding-left: 18px;
+  color: #514A58;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.learning-offer-points span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--purple-mid);
+}
+
+.learning-offer-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 10px;
+  margin-top: auto;
+  color: var(--purple-dark);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.learning-offer-link span {
+  transition: 0.2s ease;
+}
+
+.learning-offer-link:hover span {
+  transform: translateX(4px);
+}
+
+.learning-footer {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(182, 167, 209, 0.55);
+}
+
+.learning-footer > span {
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.learning-footer p {
+  max-width: 640px;
+  margin: 0;
+  font-size: 13px;
+}
+
+
 /* PROFESIONALES */
 .pro-section {
   background: #30263B;
@@ -961,8 +1210,23 @@ p { color: var(--muted); }
   .contact-grid,
   .newsletter-card,
   .therapy-heading,
-  .therapy-layout {
+  .therapy-layout,
+  .learning-header,
+  .learning-grid {
     grid-template-columns: 1fr;
+  }
+
+  .learning-header {
+    gap: 24px;
+  }
+
+  .learning-lead {
+    max-width: 680px;
+    margin-left: 0;
+  }
+
+  .learning-offers {
+    grid-template-columns: 1fr 1fr;
   }
 
   .therapy-heading {
@@ -1040,6 +1304,20 @@ p { color: var(--muted); }
 
   .therapy-intro {
     padding-left: 18px;
+  }
+
+  .learning-offers {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-footer {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .learning-rail,
+  .learning-offer {
+    padding: 24px;
   }
 
   .therapy-step {
