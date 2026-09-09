@@ -760,18 +760,89 @@
       </div>
     </section>
 
-    <section id="novedades" class="section newsletter">
-      <div class="container newsletter-card">
-        <div>
+    <section id="novedades" class="section newsletter-section">
+      <div class="container newsletter-shell">
+
+        <div class="newsletter-heading">
           <span class="eyebrow">NOVEDADES</span>
-          <h2>Recibí acceso anticipado a nuevos proyectos y recursos.</h2>
-          <p>Programas, herramientas profesionales, formación y nuevos lanzamientos.</p>
+
+          <h2>
+            Proyectos, herramientas y recursos
+            <span>antes de que estén terminados.</span>
+          </h2>
+
+          <p>
+            Esta lista no va a ser un newsletter de frecuencia fija.
+            La idea es usarla para avisar cuando haya algo concreto que valga la pena conocer,
+            probar o descargar.
+          </p>
         </div>
-        <form class="newsletter-form" onsubmit="return false;">
-          <input type="email" aria-label="Correo electrónico" placeholder="tu@email.com" />
-          <button class="btn btn-primary" type="submit">Quiero recibir novedades</button>
-          <small>Formulario visual. Todavía no envía datos.</small>
-        </form>
+
+        <div class="newsletter-layout">
+
+          <div class="newsletter-index">
+
+            <div class="newsletter-index-item">
+              <span class="newsletter-index-number">01</span>
+              <div>
+                <strong>Nuevos proyectos</strong>
+                <small>Psicométricos, herramientas profesionales y futuras soluciones.</small>
+              </div>
+            </div>
+
+            <div class="newsletter-index-item">
+              <span class="newsletter-index-number">02</span>
+              <div>
+                <strong>Recursos y materiales</strong>
+                <small>Guías, descargables, evaluaciones orientativas y contenidos.</small>
+              </div>
+            </div>
+
+            <div class="newsletter-index-item">
+              <span class="newsletter-index-number">03</span>
+              <div>
+                <strong>Formación</strong>
+                <small>Cursos, programas, talleres y nuevas propuestas académicas.</small>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="newsletter-form-panel">
+            <div class="newsletter-form-top">
+              <span>Lista de novedades</span>
+              <small>Sin frecuencia fija</small>
+            </div>
+
+            <form class="newsletter-form" onsubmit="return false;">
+              <label for="newsletter-email">Correo electrónico</label>
+
+              <div class="newsletter-input-row">
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  aria-label="Correo electrónico"
+                  placeholder="tu@email.com"
+                />
+                <button class="newsletter-submit" type="submit" aria-label="Suscribirme">
+                  →
+                </button>
+              </div>
+
+              <small class="newsletter-privacy">
+                Por ahora es una vista previa. El formulario se conectará más adelante.
+              </small>
+            </form>
+
+            <div class="newsletter-form-footer">
+              <span>No spam</span>
+              <span>Sin frecuencia obligatoria</span>
+              <span>Podés salir cuando quieras</span>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
