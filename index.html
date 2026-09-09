@@ -847,38 +847,137 @@
     </section>
 
     <section id="contacto" class="section contact-section">
-      <div class="container contact-grid">
-        <div>
-          <span class="eyebrow">CONTACTO</span>
-          <h2>Elegí el punto de entrada que mejor se adapte a lo que necesitás.</h2>
-          <p>Por ahora mantenemos WhatsApp como canal rápido y más adelante sumaremos formularios específicos por servicio.</p>
+      <div class="container contact-shell">
+
+        <div class="contact-header">
+          <div>
+            <span class="eyebrow">CONTACTO</span>
+            <h2>Dos formas simples de dar el próximo paso.</h2>
+          </div>
+
+          <p class="contact-lead">
+            Si ya querés ver horarios, podés entrar directamente a la agenda.
+            Si antes necesitás consultar algo, WhatsApp sigue siendo el canal más rápido.
+          </p>
         </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-             href="https://api.whatsapp.com/send?phone=542984681206&text=Hola%21%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20quer%C3%ADa%20hacer%20una%20consulta">
-            Escribirme por WhatsApp
+
+        <div class="contact-options">
+
+          <a
+            class="contact-option contact-option-primary"
+            href="https://calendly.com/diegocastillopsi"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-option-top">
+              <span class="contact-option-index">01</span>
+              <span class="contact-option-badge">Agenda</span>
+            </div>
+
+            <div class="contact-option-body">
+              <span class="contact-option-kicker">Ver disponibilidad</span>
+              <h3>Reservar un turno</h3>
+              <p>
+                Consultá los horarios disponibles y elegí directamente el que mejor te convenga.
+              </p>
+            </div>
+
+            <div class="contact-option-footer">
+              <span>Ir a Calendly</span>
+              <b>↗</b>
+            </div>
           </a>
+
+          <a
+            class="contact-option"
+            href="https://api.whatsapp.com/send?phone=542984681206&text=Hola%21%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20quer%C3%ADa%20hacer%20una%20consulta"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="contact-option-top">
+              <span class="contact-option-index">02</span>
+              <span class="contact-option-badge muted">Consulta</span>
+            </div>
+
+            <div class="contact-option-body">
+              <span class="contact-option-kicker">Contacto directo</span>
+              <h3>Escribirme por WhatsApp</h3>
+              <p>
+                Para consultas sobre psicoterapia, formación, proyectos o herramientas profesionales.
+              </p>
+            </div>
+
+            <div class="contact-option-footer">
+              <span>Abrir WhatsApp</span>
+              <b>↗</b>
+            </div>
+          </a>
+
         </div>
+
+        <div class="contact-meta">
+          <div>
+            <span class="contact-meta-label">Modalidad</span>
+            <p>Atención presencial en Neuquén Capital y modalidad online.</p>
+          </div>
+
+          <div>
+            <span class="contact-meta-label">Otros proyectos</span>
+            <p>Para Psicométricos, formación y nuevas herramientas, podés usar el mismo canal de contacto.</p>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Lic. Diego Castillo</strong>
-        <p>Psicología aplicada · Neuquén + online</p>
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+        <div class="footer-isotype-wrap">
+          <img
+            src="assets/brand/isotipo-diego-castillo.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+
+        <div>
+          <strong>Diego Castillo</strong>
+          <span>Licenciado en Psicología</span>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#psicoterapia">Psicoterapia</a>
-        <a href="#formacion">Formación</a>
-        <a href="https://psicometricos.com.ar" target="_blank" rel="noopener">Psicométricos</a>
-        <a href="#contacto">Contacto</a>
+
+      <div class="footer-nav-group">
+        <span class="footer-nav-title">Explorar</span>
+        <nav class="footer-links" aria-label="Navegación de pie de página">
+          <a href="#psicoterapia">Psicoterapia</a>
+          <a href="#formacion">Formación</a>
+          <a href="#profesionales">Profesionales y organizaciones</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#sobre-mi">Sobre mí</a>
+        </nav>
       </div>
+
+      <div class="footer-nav-group">
+        <span class="footer-nav-title">Accesos</span>
+        <nav class="footer-links">
+          <a href="https://calendly.com/diegocastillopsi" target="_blank" rel="noopener">Turnos ↗</a>
+          <a href="https://api.whatsapp.com/send?phone=542984681206&text=Hola%21%20Vengo%20de%20la%20p%C3%A1gina%20web%20y%20quer%C3%ADa%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp ↗</a>
+          <a href="https://psicometricos.com.ar" target="_blank" rel="noopener">Psicométricos ↗</a>
+        </nav>
+      </div>
+
     </div>
+
     <div class="container footer-bottom">
       <span>© <span id="year"></span> Diego Castillo</span>
-      <span>Psicología aplicada</span>
+
+      <div class="footer-bottom-right">
+        <span>Neuquén · Argentina</span>
+        <span>Psicología aplicada</span>
+      </div>
     </div>
   </footer>
 
