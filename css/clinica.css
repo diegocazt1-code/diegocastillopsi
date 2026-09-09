@@ -1,0 +1,772 @@
+
+/* =========================================================
+   LANDINGS CLÍNICAS — SISTEMA COMPARTIDO
+   Ansiedad · Burnout · Acoso laboral · Estado de ánimo
+   ========================================================= */
+
+.clinical-page {
+  background: #FFFFFF;
+}
+
+.clinical-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 82px 0 88px;
+  background:
+    radial-gradient(circle at 88% 12%, rgba(182, 167, 209, 0.20), transparent 26%),
+    linear-gradient(180deg, #FFFFFF 0%, #F9F7FB 100%);
+}
+
+.clinical-hero::after {
+  content: "";
+  position: absolute;
+  right: -190px;
+  bottom: -250px;
+  width: 510px;
+  height: 510px;
+  border: 1px solid rgba(182, 167, 209, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.clinical-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(350px, 0.92fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.clinical-back {
+  display: inline-flex;
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.clinical-back:hover {
+  color: var(--purple);
+}
+
+.clinical-topic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.clinical-topic > span {
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.clinical-topic > small {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--purple-soft);
+  color: var(--purple-dark);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.clinical-hero h1 {
+  max-width: 800px;
+}
+
+.clinical-hero h1 span {
+  color: var(--purple);
+}
+
+.clinical-hero-lead {
+  max-width: 720px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.clinical-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+/* Hero editorial panel */
+
+.clinical-focus {
+  padding: 30px;
+  border: 1px solid rgba(182, 167, 209, 0.62);
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(236, 232, 244, 0.78), rgba(255, 255, 255, 0.98));
+  box-shadow: 0 20px 50px rgba(46, 36, 90, 0.08);
+}
+
+.clinical-focus-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.clinical-focus-top span {
+  color: var(--purple-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.clinical-focus-top small {
+  max-width: 180px;
+  color: var(--muted);
+  font-size: 10px;
+  text-align: right;
+}
+
+.clinical-focus-list {
+  display: grid;
+}
+
+.clinical-focus-list > div {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(182, 167, 209, 0.40);
+}
+
+.clinical-focus-list > div:last-child {
+  border-bottom: 0;
+}
+
+.clinical-focus-list > div > span {
+  color: var(--purple-mid);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.clinical-focus-list strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--purple-dark);
+  font-size: 13px;
+}
+
+.clinical-focus-list small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+/* General section header */
+
+.clinical-section-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.76fr;
+  gap: 72px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.clinical-section-heading h2 {
+  max-width: 750px;
+  margin-bottom: 0;
+}
+
+.clinical-section-heading > p {
+  max-width: 500px;
+  margin: 0 0 8px auto;
+  padding-left: 24px;
+  border-left: 2px solid var(--purple-mid);
+  font-size: 14px;
+}
+
+/* Señales / motivos */
+
+.clinical-signals {
+  background: #FFFFFF;
+}
+
+.clinical-signals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.clinical-signal {
+  min-height: 220px;
+  padding: 28px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.clinical-signal > span {
+  display: block;
+  margin-bottom: 35px;
+  color: var(--purple-mid);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.clinical-signal h3 {
+  color: var(--purple-dark);
+  font-size: 20px;
+}
+
+.clinical-signal p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.clinical-signal-accent {
+  background: var(--purple-soft);
+}
+
+/* Comprender */
+
+.clinical-understand {
+  background:
+    linear-gradient(180deg, #2E245A 0%, #241C46 100%);
+  color: #FFFFFF;
+}
+
+.clinical-understand-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 82px;
+  align-items: start;
+}
+
+.clinical-understand-copy h2 {
+  color: #FFFFFF;
+}
+
+.clinical-understand-copy p {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.clinical-understand-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.clinical-understand-list > div {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 22px;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.clinical-understand-list > div > span {
+  color: #B6A7D1;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.clinical-understand-list strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+
+.clinical-understand-list p {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 12px;
+}
+
+/* Trabajo / intervenciones */
+
+.clinical-work {
+  background:
+    linear-gradient(180deg, #F8F6FA 0%, #FFFFFF 100%);
+}
+
+.clinical-work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.clinical-work-grid > div {
+  min-height: 175px;
+  padding: 24px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.clinical-work-grid > div > span {
+  display: block;
+  margin-bottom: 26px;
+  color: var(--purple-mid);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.clinical-work-grid strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--purple-dark);
+  font-size: 15px;
+}
+
+.clinical-work-grid p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Proceso */
+
+.clinical-process {
+  background: #17151B;
+  color: #FFFFFF;
+}
+
+.clinical-process-header {
+  display: grid;
+  grid-template-columns: 1fr 0.78fr;
+  gap: 72px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.clinical-process-header h2 {
+  max-width: 730px;
+  margin-bottom: 0;
+  color: #FFFFFF;
+}
+
+.clinical-process-header > p {
+  max-width: 500px;
+  margin: 0 0 8px auto;
+  padding-left: 24px;
+  border-left: 2px solid rgba(182, 167, 209, 0.52);
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 14px;
+}
+
+.clinical-process-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.clinical-process-step {
+  min-height: 225px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.clinical-process-step > span {
+  display: block;
+  margin-bottom: 43px;
+  color: rgba(182, 167, 209, 0.70);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.clinical-process-step strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.clinical-process-step p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 11px;
+}
+
+.clinical-process-note {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 760px);
+  gap: 30px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.clinical-process-note > span {
+  color: #B6A7D1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+.clinical-process-note p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+}
+
+/* Context note */
+
+.clinical-context {
+  background: #FFFFFF;
+}
+
+.clinical-context-box {
+  display: grid;
+  grid-template-columns: 0.72fr 1.28fr;
+  gap: 60px;
+  padding: 34px;
+  border: 1px solid rgba(182, 167, 209, 0.50);
+  border-radius: 26px;
+  background:
+    linear-gradient(145deg, rgba(236, 232, 244, 0.66), rgba(255, 255, 255, 0.98));
+}
+
+.clinical-context-label {
+  display: block;
+  margin-bottom: 11px;
+  color: var(--purple);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.clinical-context-box h2 {
+  margin-bottom: 0;
+  color: var(--purple-dark);
+  font-size: 30px;
+}
+
+.clinical-context-copy p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.clinical-context-copy p + p {
+  margin-top: 14px;
+}
+
+/* Related */
+
+.clinical-related {
+  padding-top: 0;
+  background: #FFFFFF;
+}
+
+.clinical-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.clinical-related-grid a {
+  min-height: 135px;
+  padding: 22px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+
+.clinical-related-grid a:hover {
+  background: var(--purple-soft);
+}
+
+.clinical-related-grid span {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--purple-mid);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.clinical-related-grid strong {
+  color: var(--purple-dark);
+  font-size: 13px;
+}
+
+/* FAQ */
+
+.clinical-faq {
+  background:
+    linear-gradient(180deg, #F8F6FA 0%, #FFFFFF 100%);
+}
+
+.clinical-faq-list {
+  max-width: 900px;
+  margin-left: auto;
+}
+
+.clinical-faq details {
+  border-top: 1px solid var(--line);
+}
+
+.clinical-faq details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.clinical-faq summary {
+  position: relative;
+  padding: 22px 44px 22px 0;
+  color: var(--purple-dark);
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.clinical-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.clinical-faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 18px;
+  color: var(--purple);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.clinical-faq details[open] summary::after {
+  content: "–";
+}
+
+.clinical-faq details p {
+  max-width: 760px;
+  margin: 0;
+  padding: 0 0 24px;
+  font-size: 13px;
+}
+
+/* Safety note */
+
+.clinical-safety {
+  margin-top: 26px;
+  padding: 17px 19px;
+  border-left: 3px solid var(--purple);
+  background: var(--purple-soft);
+}
+
+.clinical-safety strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--purple-dark);
+  font-size: 12px;
+}
+
+.clinical-safety p {
+  margin: 0;
+  font-size: 11px;
+}
+
+/* Final CTA */
+
+.clinical-final {
+  padding: 78px 0;
+  background:
+    linear-gradient(135deg, #74559E 0%, #2E245A 100%);
+  color: #FFFFFF;
+}
+
+.clinical-final-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.72fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.clinical-final h2,
+.clinical-final p {
+  color: #FFFFFF;
+}
+
+.clinical-final p {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.clinical-final-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.clinical-final-link {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* Clinical index inserted into general psychotherapy page */
+
+.therapy-specialties {
+  background: #FFFFFF;
+}
+
+.therapy-specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.therapy-specialty-link {
+  display: grid;
+  grid-template-columns: 54px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  min-height: 150px;
+  padding: 24px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+
+.therapy-specialty-link:hover {
+  background: var(--purple-soft);
+}
+
+.therapy-specialty-link > span:first-child {
+  color: var(--purple-mid);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.therapy-specialty-link strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--purple-dark);
+  font-size: 16px;
+}
+
+.therapy-specialty-link small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.therapy-specialty-arrow {
+  color: var(--purple);
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+
+.therapy-specialty-link:hover .therapy-specialty-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+
+@media (max-width: 1040px) {
+  .clinical-hero-grid,
+  .clinical-understand-grid,
+  .clinical-context-box {
+    grid-template-columns: 1fr;
+  }
+
+  .clinical-focus {
+    max-width: 760px;
+  }
+
+  .clinical-signals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clinical-process-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 920px) {
+  .clinical-section-heading,
+  .clinical-process-header,
+  .clinical-final-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .clinical-section-heading > p,
+  .clinical-process-header > p {
+    max-width: 680px;
+    margin-left: 0;
+  }
+
+  .clinical-work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .therapy-specialties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .clinical-hero {
+    padding-top: 58px;
+  }
+
+  .clinical-signals-grid,
+  .clinical-process-track,
+  .clinical-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clinical-signal,
+  .clinical-process-step {
+    min-height: auto;
+  }
+
+  .clinical-process-note {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 620px) {
+  .clinical-hero h1 {
+    font-size: 44px;
+  }
+
+  .clinical-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .clinical-hero-actions .btn {
+    width: 100%;
+  }
+
+  .clinical-understand-list > div {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .clinical-final-actions {
+    width: 100%;
+  }
+
+  .clinical-final-actions .btn {
+    width: 100%;
+  }
+
+  .therapy-specialty-link {
+    grid-template-columns: 38px 1fr auto;
+    gap: 12px;
+  }
+}
