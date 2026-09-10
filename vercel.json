@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "/page/psicologo-laboral-estres-ansiedad",
+      "destination": "/psicoterapia/",
+      "permanent": true
+    },
+    {
+      "source": "/page/asesorias-de-tesis",
+      "destination": "/asesoria-tesis/",
+      "permanent": true
+    },
+    {
+      "source": "/page/tesis",
+      "destination": "/programa-grupal-tfi/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/psicoterapia/index.html",
+      "destination": "/psicoterapia/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/asesoria-metodologica/index.html",
+      "destination": "/asesoria-tesis/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/programa-tfi/index.html",
+      "destination": "/programa-grupal-tfi/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/psicometricos/index.html",
+      "destination": "/psicometricos/",
+      "permanent": true
+    },
+    {
+      "source": "/pages/organometrica/index.html",
+      "destination": "/organimetricas/",
+      "permanent": true
+    }
+  ]
+}

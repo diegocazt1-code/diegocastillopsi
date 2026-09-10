@@ -232,3 +232,243 @@
   .tfi-final-actions{width:100%;}
   .tfi-final-actions .btn{width:100%;}
 }
+
+
+/* =========================================================
+   PULIDO TFI v0.2 — recorrido circular + preview + beneficios
+   ========================================================= */
+
+.tfi-system {
+  min-height: 470px;
+}
+
+.tfi-orbit {
+  position: relative;
+  width: min(100%, 390px);
+  aspect-ratio: 1;
+  margin: 8px auto 0;
+  border: 1px dashed rgba(116, 85, 158, 0.30);
+  border-radius: 50%;
+}
+
+.tfi-orbit::before,
+.tfi-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 16%;
+  border: 1px solid rgba(182, 167, 209, 0.32);
+  border-radius: 50%;
+}
+
+.tfi-orbit::after {
+  inset: 31%;
+  background: rgba(236, 232, 244, 0.38);
+}
+
+.tfi-orbit-center,
+.tfi-orbit-node {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.tfi-orbit-center {
+  left: 50%;
+  top: 50%;
+  width: 112px;
+  height: 112px;
+  transform: translate(-50%, -50%);
+  background: var(--purple-dark);
+  color: #FFFFFF;
+  box-shadow: 0 14px 30px rgba(46, 36, 90, 0.18);
+}
+
+.tfi-orbit-center strong {
+  font-size: 25px;
+  line-height: 1;
+}
+
+.tfi-orbit-center small {
+  color: #D8C8E8;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.tfi-orbit-node {
+  width: 108px;
+  height: 108px;
+  padding: 14px;
+  border: 1px solid rgba(116, 85, 158, 0.28);
+  background: #FFFFFF;
+  box-shadow: 0 10px 26px rgba(46, 36, 90, 0.08);
+}
+
+.tfi-orbit-node span {
+  display: block;
+  color: var(--purple-mid);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.tfi-orbit-node strong {
+  color: var(--purple-dark);
+  font-size: 11px;
+}
+
+.tfi-orbit-node.node-1 { left: 50%; top: -8px; transform: translateX(-50%); }
+.tfi-orbit-node.node-2 { right: -8px; top: 50%; transform: translateY(-50%); }
+.tfi-orbit-node.node-3 { left: 50%; bottom: -8px; transform: translateX(-50%); }
+.tfi-orbit-node.node-4 { left: -8px; top: 50%; transform: translateY(-50%); }
+
+.tfi-annexes-list > div {
+  align-items: start;
+}
+
+.tfi-annexes-list small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255,255,255,.58);
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.tfi-includes-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tfi-preview {
+  background: #FFFFFF;
+}
+
+.tfi-slide-frame {
+  overflow: hidden;
+  border: 1px solid rgba(182, 167, 209, 0.52);
+  border-radius: 26px;
+  background: #F7F5F9;
+  box-shadow: 0 20px 55px rgba(46, 36, 90, 0.08);
+}
+
+.tfi-slide-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+  background: #FFFFFF;
+}
+
+.tfi-slide-toolbar span {
+  color: var(--purple-dark);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.tfi-slide-toolbar small {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.tfi-slide {
+  min-height: 430px;
+  padding: 52px;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(182,167,209,.24), transparent 24%),
+    linear-gradient(145deg, #FFFFFF, #F0EBF5);
+}
+
+.tfi-slide-title span {
+  color: var(--purple);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.tfi-slide-title h3 {
+  margin-top: 8px;
+  color: var(--purple-dark);
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.tfi-slide-roadmap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 54px;
+}
+
+.tfi-slide-roadmap div {
+  min-width: 115px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 22px rgba(46,36,90,.07);
+}
+
+.tfi-slide-roadmap span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--purple-mid);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.tfi-slide-roadmap strong {
+  color: var(--purple-dark);
+  font-size: 11px;
+}
+
+.tfi-slide-roadmap b {
+  color: var(--purple-mid);
+}
+
+.tfi-slide-foot {
+  margin: 46px 0 0;
+  color: var(--purple-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 1040px) {
+  .tfi-includes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .tfi-orbit {
+    width: 310px;
+  }
+
+  .tfi-orbit-node {
+    width: 84px;
+    height: 84px;
+    padding: 8px;
+  }
+
+  .tfi-orbit-center {
+    width: 94px;
+    height: 94px;
+  }
+
+  .tfi-slide {
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+  .tfi-slide-roadmap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+  }
+
+  .tfi-slide-roadmap b {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .tfi-includes-grid { grid-template-columns: 1fr; }
+}
