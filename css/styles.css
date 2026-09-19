@@ -2740,3 +2740,51 @@ p { color: var(--muted); }
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+/* =========================================================
+   GROWTH / CRO POLISH v0.3
+   ========================================================= */
+:focus-visible {
+  outline: 3px solid rgba(116, 85, 158, 0.30);
+  outline-offset: 3px;
+}
+
+.newsletter-direct-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-direct-copy {
+  padding: 18px 0 8px;
+  border-top: 1px solid rgba(182, 167, 209, 0.36);
+}
+
+.newsletter-direct-copy strong {
+  display: block;
+  color: var(--purple-dark);
+  font-size: 14px;
+}
+
+.newsletter-direct-copy p {
+  margin: 8px 0 0;
+  font-size: 12px;
+}
+
+.newsletter-direct-action {
+  width: fit-content;
+  margin-top: 14px;
+}
+
+@media (max-width: 620px) {
+  .newsletter-direct-action { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
