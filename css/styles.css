@@ -2809,3 +2809,52 @@ p { color: var(--muted); }
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* =========================================================
+   RECURSOS — libro destacado v0.2
+   ========================================================= */
+.resource-featured-book {
+  min-height: 590px;
+}
+
+.resource-book-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 0.58fr);
+  gap: 30px;
+  align-items: center;
+  margin: 28px 0;
+}
+
+.resource-book-preview {
+  margin: 0;
+  align-self: center;
+}
+
+.resource-book-preview img {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 22px 50px rgba(18, 12, 39, 0.28);
+}
+
+.resource-featured-book .resource-featured-body h3 {
+  font-size: clamp(40px, 4.3vw, 60px);
+}
+
+@media (max-width: 720px) {
+  .resource-book-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .resource-book-preview {
+    max-width: 280px;
+  }
+  .resource-book-preview img {
+    max-height: 280px;
+  }
+}
