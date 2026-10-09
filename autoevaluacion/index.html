@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapa de bienestar actual | Diego Castillo</title>
+  <meta name="description" content="Autoevaluación breve y orientativa sobre ansiedad, estado de ánimo, sobrecarga, recuperación e impacto del contexto laboral. Resultado inmediato, sin diagnóstico." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://diegocastillopsi.com/autoevaluacion/" />
+  <meta name="theme-color" content="#74559E" />
+
+  <meta property="og:title" content="Mapa de bienestar actual | Diego Castillo" />
+  <meta property="og:description" content="Una autoevaluación breve para ordenar lo que estás sintiendo. Resultado inmediato. No reemplaza una evaluación psicológica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://diegocastillopsi.com/autoevaluacion/" />
+  <meta property="og:site_name" content="Diego Castillo · Licenciado en Psicología" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://diegocastillopsi.com/assets/brand/logo-circular-bicolor.jpg" />
+
+  <link rel="icon" href="../assets/favicon/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/autoevaluacion.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Mapa de bienestar actual",
+    "description":"Autoevaluación breve y orientativa sobre bienestar psicológico actual.",
+    "url":"https://diegocastillopsi.com/autoevaluacion/",
+    "author":{
+      "@type":"Person",
+      "name":"Diego Castillo",
+      "jobTitle":"Licenciado en Psicología"
+    }
+  }
+  </script>
+</head>
+
+<body class="selftest-page">
+  <header class="selftest-header">
+    <div class="container selftest-nav">
+      <a class="selftest-brand" href="../index.html" aria-label="Volver al inicio">
+        <img src="../assets/brand/logo-diego-castillo-web.png" alt="Diego Castillo — Licenciado en Psicología" />
+      </a>
+      <a class="selftest-back" href="../psicoterapia/">Psicoterapia →</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="selftest-hero">
+      <div class="container selftest-hero-grid">
+        <div class="selftest-hero-copy">
+          <span class="eyebrow">AUTOEVALUACIÓN · 2–3 MINUTOS</span>
+          <h1>¿Cómo estás <span>realmente?</span></h1>
+          <p class="selftest-lead">
+            A veces sabemos que algo no está bien, pero cuesta ponerle nombre. Este recorrido breve
+            puede ayudarte a ordenar qué áreas están necesitando más atención hoy.
+          </p>
+
+          <div class="selftest-trust">
+            <div><strong>Sin registro</strong><span>No necesitás dejar tus datos para conocer el resultado.</span></div>
+            <div><strong>Resultado inmediato</strong><span>La orientación se calcula en tu dispositivo.</span></div>
+            <div><strong>Sin diagnóstico</strong><span>No reemplaza una evaluación psicológica profesional.</span></div>
+          </div>
+        </div>
+
+        <aside class="selftest-intro-card">
+          <span class="selftest-card-kicker">MAPA DE BIENESTAR ACTUAL</span>
+          <h2>Una orientación, no una etiqueta.</h2>
+          <p>
+            Vas a responder preguntas sobre las <strong>últimas dos semanas</strong>.
+            Al final vas a ver un mapa de señales relacionadas con activación, ánimo,
+            sobrecarga, recuperación, interferencia y —si corresponde— contexto laboral.
+          </p>
+
+          <ul>
+            <li>Preguntas propias de orientación.</li>
+            <li>Reglas de cálculo determinísticas.</li>
+            <li>No utiliza IA para decidir el resultado.</li>
+            <li>Podés descargar una copia en PDF.</li>
+          </ul>
+
+          <button class="btn btn-primary selftest-start" id="startTest" type="button">
+            Empezar autoevaluación
+          </button>
+          <small>Orientada a personas adultas. Podés salir en cualquier momento.</small>
+        </aside>
+      </div>
+    </section>
+
+    <section class="selftest-stage" id="evaluacion" hidden>
+      <div class="container selftest-stage-shell">
+        <div class="selftest-progress-wrap">
+          <div class="selftest-progress-meta">
+            <span id="progressLabel">Pregunta 1</span>
+            <span id="progressPercent">0%</span>
+          </div>
+          <div class="selftest-progress" aria-hidden="true">
+            <span id="progressBar"></span>
+          </div>
+        </div>
+
+        <div class="selftest-question-card" id="questionCard">
+          <div class="selftest-question-top">
+            <span class="selftest-question-domain" id="questionDomain">BIENESTAR ACTUAL</span>
+            <span class="selftest-question-index" id="questionIndex">01</span>
+          </div>
+
+          <h2 id="questionText"></h2>
+          <p class="selftest-question-help" id="questionHelp">
+            Pensá en cómo te sentiste durante las últimas dos semanas.
+          </p>
+
+          <div class="selftest-options" id="answerOptions"></div>
+
+          <div class="selftest-question-footer">
+            <button class="selftest-text-button" id="prevQuestion" type="button">← Anterior</button>
+            <button class="selftest-text-button" id="exitTest" type="button">Salir</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="selftest-results" id="resultados" hidden>
+      <div class="container">
+        <div class="selftest-results-heading">
+          <span class="eyebrow">TU MAPA ACTUAL</span>
+          <h2 id="resultHeadline">Hay un área que merece un poco más de atención.</h2>
+          <p id="resultIntro"></p>
+        </div>
+
+        <div class="selftest-result-layout">
+          <article class="selftest-primary-result">
+            <span class="selftest-result-label">ÁREA MÁS MARCADA</span>
+            <div class="selftest-primary-icon" id="primaryIcon">◎</div>
+            <h3 id="primaryTitle"></h3>
+            <p id="primaryDescription"></p>
+            <div class="selftest-result-tag" id="primaryLevel"></div>
+          </article>
+
+          <article class="selftest-map-card">
+            <div class="selftest-map-head">
+              <div>
+                <span class="selftest-result-label">PANORAMA GENERAL</span>
+                <h3>No todo pesa de la misma manera.</h3>
+              </div>
+              <span class="selftest-map-note">Orientativo · no normativo</span>
+            </div>
+            <div class="selftest-domain-list" id="domainList"></div>
+          </article>
+        </div>
+
+        <section class="selftest-observe">
+          <div class="selftest-observe-head">
+            <span class="eyebrow">PARA OBSERVAR</span>
+            <h2>Tres preguntas para llevarte de acá.</h2>
+          </div>
+          <div class="selftest-observe-grid" id="observeGrid"></div>
+        </section>
+
+        <section class="selftest-next" id="nextStep">
+          <div class="selftest-next-copy">
+            <span class="selftest-result-label">PRÓXIMO PASO POSIBLE</span>
+            <h2 id="nextTitle"></h2>
+            <p id="nextDescription"></p>
+          </div>
+          <div class="selftest-next-actions" id="nextActions"></div>
+        </section>
+
+        <section class="selftest-interference" id="interferenceBox">
+          <div>
+            <span class="selftest-result-label">IMPACTO COTIDIANO</span>
+            <h3 id="interferenceTitle"></h3>
+          </div>
+          <p id="interferenceText"></p>
+        </section>
+
+        <section class="selftest-copy">
+          <div class="selftest-copy-head">
+            <div>
+              <span class="eyebrow">GUARDAR RESULTADO</span>
+              <h2>Este resultado es tuyo.</h2>
+            </div>
+            <p>
+              Podés descargar una copia en PDF. Si preferís enviártela por correo,
+              esa opción aparece después y es completamente voluntaria.
+            </p>
+          </div>
+
+          <div class="selftest-copy-actions">
+            <button class="btn btn-primary" id="downloadPdf" type="button">Descargar resultado en PDF</button>
+            <button class="btn btn-secondary" id="showEmail" type="button">Enviármelo por email</button>
+            <button class="selftest-text-button" id="restartTest" type="button">Rehacer autoevaluación</button>
+          </div>
+
+          <form class="selftest-email-form" id="emailForm" hidden novalidate>
+            <label for="resultEmail">Tu correo electrónico</label>
+            <div class="selftest-email-row">
+              <input id="resultEmail" name="email" type="email" autocomplete="email" maxlength="180" placeholder="nombre@correo.com" required />
+              <button class="btn btn-primary" id="sendEmail" type="submit">Enviar mi PDF</button>
+            </div>
+            <p>
+              El correo es opcional. Para enviarte el PDF, el archivo transita por el proveedor de correo.
+              Si preferís no hacerlo, descargalo directamente en tu dispositivo.
+            </p>
+            <div class="selftest-email-status" id="emailStatus" role="status" aria-live="polite" hidden></div>
+          </form>
+        </section>
+
+        <section class="selftest-method">
+          <details>
+            <summary>¿Cómo se calculó este resultado?</summary>
+            <div>
+              <p>
+                Esta herramienta utiliza preguntas propias de orientación y reglas determinísticas.
+                Agrupa tus respuestas en áreas temáticas y compara la presencia relativa de señales.
+                No utiliza baremos poblacionales, no estima probabilidades diagnósticas y no constituye
+                un test psicométrico validado.
+              </p>
+              <p>
+                El resultado no permite concluir que exista un trastorno, burnout o acoso laboral.
+                Es una forma estructurada de observar patrones y decidir qué información puede ser útil explorar después.
+              </p>
+            </div>
+          </details>
+        </section>
+
+        <section class="selftest-safety">
+          <strong>Si necesitás ayuda inmediata</strong>
+          <p>
+            Esta autoevaluación no es un recurso de urgencias. Si estás atravesando una crisis,
+            existe riesgo inmediato para tu seguridad o sentís que no podés mantenerte a salvo,
+            buscá asistencia presencial urgente, una guardia de salud o el servicio de emergencias de tu localidad.
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="selftest-footer">
+    <div class="container">
+      <div class="selftest-footer-brand">
+        <img src="../assets/brand/logo-circular-bicolor.jpg" alt="" aria-hidden="true" />
+        <div>
+          <strong>Diego Castillo</strong>
+          <span>Licenciado en Psicología · M.P. N.º 2669</span>
+        </div>
+      </div>
+      <div class="selftest-footer-meta">
+        <span>Neuquén · Argentina</span>
+        <span>Autoevaluación orientativa · v1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/pdf-lite.js"></script>
+  <script src="../js/autoevaluacion.js"></script>
+</body>
+</html>
