@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Encuesta sobre uso de instrumentos psicométricos | Diego Castillo</title>
-  <meta name="description" content="Encuesta breve para profesionales sobre uso, corrección e integración de instrumentos psicométricos. Duración estimada: 4–5 minutos." />
+  <meta name="description" content="Encuesta breve para profesionales sobre uso, corrección e integración de instrumentos psicométricos. Duración estimada: 5 minutos." />
   <meta name="robots" content="noindex,follow" />
   <link rel="canonical" href="https://diegocastillopsi.com/encuesta-psicometricos/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +23,7 @@
     gtag('config', 'G-NE7YE3SDZD');
   </script>
 
+  <!-- Meta Pixel existente del sitio. Verificar en Events Manager antes de activar pauta. -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -39,7 +40,7 @@
       <a aria-label="Diego Castillo — Inicio" class="brand" href="../index.html">
         <img alt="Diego Castillo — Licenciado en Psicología" src="../assets/brand/logo-diego-castillo-web.png" />
       </a>
-      <a class="survey-top-link" href="../psicometricos/index.html">Conocer Psicométricos →</a>
+      <span class="survey-top-label">Relevamiento profesional</span>
     </div>
   </header>
 
@@ -47,21 +48,21 @@
     <section class="survey-hero">
       <div class="container survey-shell">
         <div class="survey-intro">
-          <span class="eyebrow">RELEVAMIENTO PROFESIONAL · PSICOMÉTRICOS</span>
+          <span class="eyebrow">RELEVAMIENTO PROFESIONAL</span>
           <h1>¿Utilizás instrumentos psicométricos en tu práctica?</h1>
           <p class="survey-lead">
-            Estoy relevando cómo profesionales corrigen, procesan e integran instrumentos
-            psicométricos para orientar el desarrollo de Psicométricos.
+            Estoy realizando un relevamiento breve para conocer cómo los profesionales corrigen,
+            procesan e integran instrumentos psicométricos en su trabajo cotidiano.
           </p>
           <div class="survey-meta">
-            <span>⏱ 4–5 minutos</span>
-            <span>✓ Respuestas para investigación de producto</span>
-            <span>🔒 Sin datos de pacientes o evaluados</span>
+            <span>⏱ Aproximadamente 5 minutos</span>
+            <span>✓ Dirigida a profesionales que utilizan instrumentos psicométricos</span>
+            <span>🔒 No solicita datos de pacientes o evaluados</span>
           </div>
           <div class="survey-note">
-            <strong>Privacidad:</strong> la encuesta puede responderse de forma anónima. Solo si querés
-            participar del Early Access podés dejar un correo al final. No incluyas nombres, DNI,
-            historias clínicas ni otra información identificatoria de pacientes o evaluados.
+            <strong>Finalidad:</strong> los resultados se utilizarán para orientar el desarrollo de
+            herramientas digitales destinadas a profesionales que trabajan con evaluación psicométrica.
+            La participación es voluntaria y la encuesta no solicita nombre ni correo electrónico.
           </div>
         </div>
 
@@ -94,19 +95,41 @@
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>02</span><div><h2>¿En qué ámbitos utilizás instrumentos psicométricos?</h2><p>Podés marcar más de uno.</p></div></div>
+            <div class="survey-question-head"><span>02</span><div><h2>¿Cuál es tu modalidad principal de ejercicio?</h2></div></div>
+            <div class="survey-options survey-options-single">
+              <label><input type="radio" name="practice_mode" value="Independiente" required /><span>Principalmente independiente</span></label>
+              <label><input type="radio" name="practice_mode" value="Relación de dependencia" /><span>Principalmente en relación de dependencia</span></label>
+              <label><input type="radio" name="practice_mode" value="Ambas" /><span>Combino ambas modalidades</span></label>
+              <label><input type="radio" name="practice_mode" value="Institución / organización" /><span>Institución / organización</span></label>
+              <label><input type="radio" name="practice_mode" value="Otra" /><span>Otra</span></label>
+            </div>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>03</span><div><h2>¿En qué ámbitos utilizás instrumentos psicométricos?</h2><p>Podés marcar más de uno.</p></div></div>
             <div class="survey-options">
               <label><input type="checkbox" name="work_areas" value="Clínica" /><span>Clínica</span></label>
               <label><input type="checkbox" name="work_areas" value="Jurídico-forense" /><span>Jurídico-forense</span></label>
               <label><input type="checkbox" name="work_areas" value="Laboral / organizacional" /><span>Laboral / organizacional</span></label>
               <label><input type="checkbox" name="work_areas" value="Educacional / orientación vocacional" /><span>Educacional / orientación vocacional</span></label>
+              <label><input type="checkbox" name="work_areas" value="Neuropsicología" /><span>Neuropsicología</span></label>
               <label><input type="checkbox" name="work_areas" value="Investigación" /><span>Investigación</span></label>
               <label><input type="checkbox" name="work_areas" value="Otro" /><span>Otro</span></label>
             </div>
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>03</span><div><h2>¿Con qué frecuencia utilizás tests o escalas?</h2></div></div>
+            <div class="survey-question-head"><span>04</span><div><h2>¿Con qué frecuencia realizás evaluaciones vinculadas al ámbito jurídico-forense?</h2></div></div>
+            <div class="survey-options survey-options-single">
+              <label><input type="radio" name="forensic_frequency" value="Nunca" required /><span>Nunca</span></label>
+              <label><input type="radio" name="forensic_frequency" value="Ocasionalmente" /><span>Ocasionalmente</span></label>
+              <label><input type="radio" name="forensic_frequency" value="Regularmente" /><span>Regularmente</span></label>
+              <label><input type="radio" name="forensic_frequency" value="Actividad principal" /><span>Es una de mis principales actividades</span></label>
+            </div>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>05</span><div><h2>¿Con qué frecuencia utilizás tests o escalas psicométricas?</h2></div></div>
             <div class="survey-options survey-options-single">
               <label><input type="radio" name="frequency" value="Todos o casi todos los días" required /><span>Todos o casi todos los días</span></label>
               <label><input type="radio" name="frequency" value="Varias veces por semana" /><span>Varias veces por semana</span></label>
@@ -117,76 +140,126 @@
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>04</span><div><h2>¿Qué instrumentos utilizás con mayor frecuencia?</h2><p>Podés escribir siglas o nombres. No incluyas datos de personas evaluadas.</p></div></div>
-            <textarea name="frequent_instruments" rows="4" maxlength="800" placeholder="Ej.: BDI-II, BAI, SCL-90-R, MBI, técnicas de personalidad..."></textarea>
+            <div class="survey-question-head"><span>06</span><div><h2>¿Qué instrumentos utilizás con mayor frecuencia?</h2><p>Podés escribir siglas o nombres. No incluyas datos de personas evaluadas.</p></div></div>
+            <textarea name="frequent_instruments" rows="4" maxlength="800" placeholder="Ej.: BDI-II, BAI, SCL-90-R, MMPI, PAI, WAIS, Raven..."></textarea>
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>05</span><div><h2>¿Cómo realizás hoy la corrección y el procesamiento?</h2></div></div>
+            <div class="survey-question-head"><span>07</span><div><h2>¿Cómo realizás hoy la corrección y el procesamiento?</h2></div></div>
             <div class="survey-options">
               <label><input type="checkbox" name="current_workflow" value="Manual / papel" /><span>Manual / papel</span></label>
-              <label><input type="checkbox" name="current_workflow" value="Excel / planillas propias" /><span>Excel / planillas propias</span></label>
+              <label><input type="checkbox" name="current_workflow" value="Excel / Google Sheets" /><span>Excel / Google Sheets</span></label>
               <label><input type="checkbox" name="current_workflow" value="Software específico del instrumento" /><span>Software específico del instrumento</span></label>
-              <label><input type="checkbox" name="current_workflow" value="Plataforma web" /><span>Plataforma web</span></label>
+              <label><input type="checkbox" name="current_workflow" value="Plataforma online" /><span>Plataforma online</span></label>
+              <label><input type="checkbox" name="current_workflow" value="Editorial / sistema propietario" /><span>Editorial / sistema propietario</span></label>
               <label><input type="checkbox" name="current_workflow" value="Combinación de varios métodos" /><span>Combinación de varios métodos</span></label>
               <label><input type="checkbox" name="current_workflow" value="Otro" /><span>Otro</span></label>
             </div>
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>06</span><div><h2>¿Qué tareas te generan más carga o tiempo?</h2><p>Marcá todas las que correspondan.</p></div></div>
+            <div class="survey-question-head"><span>08</span><div><h2>¿Cuánto tiempo dedicás normalmente al procesamiento y organización de resultados de una evaluación o batería?</h2></div></div>
+            <div class="survey-options survey-options-single">
+              <label><input type="radio" name="processing_time" value="Menos de 15 minutos" required /><span>Menos de 15 minutos</span></label>
+              <label><input type="radio" name="processing_time" value="15–30 minutos" /><span>15–30 minutos</span></label>
+              <label><input type="radio" name="processing_time" value="31–60 minutos" /><span>31–60 minutos</span></label>
+              <label><input type="radio" name="processing_time" value="1–2 horas" /><span>1–2 horas</span></label>
+              <label><input type="radio" name="processing_time" value="Más de 2 horas" /><span>Más de 2 horas</span></label>
+              <label><input type="radio" name="processing_time" value="Varía demasiado" /><span>Varía demasiado para estimarlo</span></label>
+            </div>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>09</span><div><h2>¿Qué tareas te generan más carga o tiempo?</h2><p>Marcá todas las que correspondan.</p></div></div>
             <div class="survey-options">
+              <label><input type="checkbox" name="pain_points" value="Carga / transcripción de datos" /><span>Carga / transcripción de datos</span></label>
               <label><input type="checkbox" name="pain_points" value="Sumar y calcular puntajes" /><span>Sumar y calcular puntajes</span></label>
               <label><input type="checkbox" name="pain_points" value="Aplicar baremos / conversiones" /><span>Aplicar baremos / conversiones</span></label>
-              <label><input type="checkbox" name="pain_points" value="Armar gráficos" /><span>Armar gráficos</span></label>
-              <label><input type="checkbox" name="pain_points" value="Pasar resultados a informes" /><span>Pasar resultados a informes</span></label>
+              <label><input type="checkbox" name="pain_points" value="Verificar cálculos" /><span>Verificar cálculos</span></label>
+              <label><input type="checkbox" name="pain_points" value="Armar gráficos / perfiles" /><span>Armar gráficos / perfiles</span></label>
               <label><input type="checkbox" name="pain_points" value="Integrar varios instrumentos" /><span>Integrar varios instrumentos</span></label>
-              <label><input type="checkbox" name="pain_points" value="Procesar varios protocolos / muestras" /><span>Procesar varios protocolos / muestras</span></label>
+              <label><input type="checkbox" name="pain_points" value="Redactar / preparar el informe" /><span>Redactar / preparar el informe</span></label>
+              <label><input type="checkbox" name="pain_points" value="Procesar múltiples protocolos" /><span>Procesar múltiples protocolos</span></label>
               <label><input type="checkbox" name="pain_points" value="Organizar historial por caso" /><span>Organizar historial por caso</span></label>
               <label><input type="checkbox" name="pain_points" value="Otro" /><span>Otro</span></label>
             </div>
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>07</span><div><h2>¿Qué funciones te resultarían más valiosas?</h2><p>Elegí hasta 3.</p></div></div>
-            <div class="survey-options" id="topFeaturesOptions">
+            <div class="survey-question-head"><span>10</span><div><h2>¿Qué tan importante es poder identificar claramente el baremo, fuente y versión utilizados?</h2></div></div>
+            <div class="survey-scale" role="radiogroup" aria-label="Importancia de la trazabilidad">
+              <label><input type="radio" name="traceability_importance" value="1" required /><span>1<small>Nada importante</small></span></label>
+              <label><input type="radio" name="traceability_importance" value="2" /><span>2</span></label>
+              <label><input type="radio" name="traceability_importance" value="3" /><span>3</span></label>
+              <label><input type="radio" name="traceability_importance" value="4" /><span>4</span></label>
+              <label><input type="radio" name="traceability_importance" value="5" /><span>5<small>Muy importante</small></span></label>
+            </div>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>11</span><div><h2>¿Qué funciones te resultarían más valiosas?</h2><p>Elegí hasta 3.</p></div></div>
+            <div class="survey-options">
               <label><input type="checkbox" name="top_features" value="Scoring automático y validado" /><span>Scoring automático y validado</span></label>
               <label><input type="checkbox" name="top_features" value="Baremos y conversiones automáticas" /><span>Baremos y conversiones automáticas</span></label>
-              <label><input type="checkbox" name="top_features" value="Gráficos y visualización" /><span>Gráficos y visualización</span></label>
-              <label><input type="checkbox" name="top_features" value="Exportación PDF / DOCX" /><span>Exportación PDF / DOCX</span></label>
+              <label><input type="checkbox" name="top_features" value="Gráficos y perfiles" /><span>Gráficos y perfiles</span></label>
+              <label><input type="checkbox" name="top_features" value="Trazabilidad de fuentes y versiones" /><span>Trazabilidad de fuentes y versiones</span></label>
               <label><input type="checkbox" name="top_features" value="Integración de varios tests" /><span>Integración de varios tests</span></label>
+              <label><input type="checkbox" name="top_features" value="Exportación PDF / DOCX" /><span>Exportación PDF / DOCX</span></label>
               <label><input type="checkbox" name="top_features" value="Evaluaciones múltiples / cohortes" /><span>Evaluaciones múltiples / cohortes</span></label>
-              <label><input type="checkbox" name="top_features" value="Informe asistido por IA" /><span>Informe asistido por IA</span></label>
+              <label><input type="checkbox" name="top_features" value="Informe asistido por IA" /><span>Asistencia de IA para integrar o redactar</span></label>
               <label><input type="checkbox" name="top_features" value="Historial por caso" /><span>Historial por caso</span></label>
             </div>
-            <p id="featureLimitMessage" class="survey-inline-error" hidden>Podés elegir hasta 3 opciones.</p>
+            <p id="featureLimitMessage" class="survey-inline-error" hidden>Podés elegir hasta 3 funciones.</p>
           </section>
 
           <section class="survey-block">
-            <div class="survey-question-head"><span>08</span><div><h2>¿Qué instrumentos te gustaría que Psicométricos incorpore?</h2><p>Esto nos ayuda a ordenar el roadmap según demanda real.</p></div></div>
-            <textarea name="requested_instruments" rows="4" maxlength="800" placeholder="Escribí los instrumentos que más te serviría automatizar..."></textarea>
-          </section>
-
-          <section class="survey-block">
-            <div class="survey-question-head"><span>09</span><div><h2>¿Te interesaría probar Psicométricos durante 30 días sin costo?</h2><p>Early Access para profesionales. La plataforma continúa incorporando instrumentos y mejoras.</p></div></div>
+            <div class="survey-question-head"><span>12</span><div><h2>¿Cuál de estas propuestas te resulta más valiosa?</h2><p>Elegí la que más se acerque a algo por lo que considerarías pagar.</p></div></div>
             <div class="survey-options survey-options-single">
-              <label><input type="radio" name="beta_interest" value="Sí" required /><span>Sí, me interesa</span></label>
-              <label><input type="radio" name="beta_interest" value="Tal vez" /><span>Tal vez, quiero conocer más</span></label>
-              <label><input type="radio" name="beta_interest" value="No por ahora" /><span>No por ahora</span></label>
+              <label><input type="radio" name="value_proposition" value="Eficiencia" required /><span><strong>Eficiencia:</strong> reducir cálculos y trabajo manual para ahorrar tiempo.</span></label>
+              <label><input type="radio" name="value_proposition" value="Confianza / trazabilidad" /><span><strong>Confianza:</strong> scoring trazable, con baremo, fuente y versión identificables.</span></label>
+              <label><input type="radio" name="value_proposition" value="Integración" /><span><strong>Integración:</strong> reunir distintos instrumentos y resultados de un mismo caso en un solo lugar.</span></label>
             </div>
-            <div id="betaEmailWrap" class="survey-conditional" hidden>
-              <label for="beta_email"><span>Correo para contactarte por el Early Access <small>(opcional)</small></span><input type="email" id="beta_email" name="beta_email" maxlength="180" autocomplete="email" placeholder="tu@email.com" /></label>
-              <p>Dejarlo es opcional. Si no lo completás, el resto de la encuesta continúa siendo anónimo.</p>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>13</span><div><h2>¿Pagás actualmente por alguna herramienta relacionada con evaluación psicológica o psicométrica?</h2></div></div>
+            <div class="survey-options survey-options-single">
+              <label><input type="radio" name="paid_tool_status" value="Suscripción" required /><span>Sí, mediante suscripción</span></label>
+              <label><input type="radio" name="paid_tool_status" value="Créditos / por uso" /><span>Sí, por uso o créditos</span></label>
+              <label><input type="radio" name="paid_tool_status" value="Licencia / compra individual" /><span>Sí, compré software o licencias individuales</span></label>
+              <label><input type="radio" name="paid_tool_status" value="Otra modalidad paga" /><span>Sí, de otra forma</span></label>
+              <label><input type="radio" name="paid_tool_status" value="No" /><span>No</span></label>
+            </div>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>14</span><div><h2>¿Qué instrumentos te gustaría poder procesar o automatizar con una herramienta profesional?</h2><p>Esto nos ayuda a conocer qué necesidades aparecen con mayor frecuencia.</p></div></div>
+            <textarea name="requested_instruments" rows="4" maxlength="800" placeholder="Ej.: MMPI, PAI, WAIS, SENA, Raven, escalas clínicas, instrumentos OVO..."></textarea>
+          </section>
+
+          <section class="survey-block">
+            <div class="survey-question-head"><span>15</span><div><h2>Si una plataforma resolviera bien estas tareas, ¿qué rango mensual te parecería razonable?</h2><p>Respuesta orientativa. No define el precio final.</p></div></div>
+            <div class="survey-options survey-options-single">
+              <label><input type="radio" name="price_range" value="Menos de ARS 20.000" required /><span>Menos de $20.000 ARS</span></label>
+              <label><input type="radio" name="price_range" value="ARS 20.000–35.000" /><span>$20.000–$35.000 ARS</span></label>
+              <label><input type="radio" name="price_range" value="ARS 35.001–50.000" /><span>$35.001–$50.000 ARS</span></label>
+              <label><input type="radio" name="price_range" value="ARS 50.001–75.000" /><span>$50.001–$75.000 ARS</span></label>
+              <label><input type="radio" name="price_range" value="ARS 75.001–100.000" /><span>$75.001–$100.000 ARS</span></label>
+              <label><input type="radio" name="price_range" value="Más de ARS 100.000" /><span>Más de $100.000 ARS</span></label>
+              <label><input type="radio" name="price_range" value="No sabría decirlo" /><span>No sabría decirlo</span></label>
             </div>
           </section>
 
           <section class="survey-block survey-consent-block">
-            <label class="survey-consent"><input type="checkbox" name="privacy_ack" value="true" required /><span>Entiendo que esta encuesta no debe incluir datos personales, clínicos o identificatorios de pacientes o evaluados.</span></label>
+            <label class="survey-consent">
+              <input type="checkbox" name="privacy_ack" value="true" required />
+              <span>Entiendo que esta encuesta no debe incluir datos personales, clínicos o identificatorios de pacientes o evaluados.</span>
+            </label>
           </section>
 
-          <div id="surveyFormError" class="survey-form-error" role="alert" hidden></div>
+          <p id="surveyFormError" class="survey-form-error" role="alert" hidden></p>
           <button id="surveySubmitButton" class="btn btn-primary survey-submit" type="submit">Enviar respuestas</button>
-          <p class="survey-submit-note">Tus respuestas se usan para orientar decisiones de producto, priorización de instrumentos y mejoras de Psicométricos.</p>
+          <p class="survey-submit-note">La encuesta es anónima. Si después querés probar la herramienta que estamos desarrollando, vas a poder dejar tus datos en un formulario independiente.</p>
         </form>
       </div>
     </section>
@@ -194,11 +267,10 @@
 
   <footer class="site-footer survey-footer">
     <div class="container footer-bottom">
-      <span>© <span id="year"></span> Diego Castillo · Licenciado en Psicología</span>
-      <div class="footer-bottom-right"><a href="../psicometricos/index.html">Psicométricos</a><a href="../index.html">Volver a la web</a></div>
+      <span>© <span id="year"></span> Diego Castillo</span>
+      <div class="footer-bottom-right"><span>Neuquén · Argentina</span><span>Relevamiento profesional</span></div>
     </div>
   </footer>
-
   <script src="../js/encuesta-psicometricos.js"></script>
 </body>
 </html>
