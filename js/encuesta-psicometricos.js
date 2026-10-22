@@ -56,7 +56,7 @@
 
   function appendAttribution(urlString, attribution) {
     try {
-      const url = new URL(urlString, location.origin);
+      const url = new URL(urlString, location.href);
       Object.entries(attribution).forEach(([key, value]) => {
         if (!value) return;
         const targetKey = key === "campaign_segment" ? "survey_segment" : key;
